@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">
-                        Hello I'm{" "}
+                        Hello, I'm{" "}
                     </span>
                     <br></br>
                     <TypeAnimation
@@ -19,10 +19,10 @@ const HeroSection = () => {
                         1000, // wait 1s before replacing "Mice" with "Hamsters"
                         'Python Developer',
                         1000,
-                        'Cute',
+                        'Cloud Enthusiast',
                         1000,
-                        'Fat',
-                        1000
+                        'Your future teammate',
+                        1000,
                         ]}
                         wrapper="span"
                         speed={50}
@@ -30,7 +30,7 @@ const HeroSection = () => {
                     />
                 </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Crafting code, one project at a time.
                 </p>
                 <div>
                     <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">

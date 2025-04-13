@@ -7,7 +7,7 @@ const projectsData = [
     {
         id: 1, 
         title: "Sales Data Automator",
-        description: "Automated sales data processing and reporting using Python, reducing manual effort by 80%.",
+        description: "A Python-based automation tool that extracts sales and inventory data from company partner website, standardizes reports into Excel, and improves productivity by over 70%.",
         image: "/images/projects/1.png",
         tag: ["All", "App"],
         gitUrl: "/",

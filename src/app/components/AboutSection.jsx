@@ -69,25 +69,22 @@ const handleTabChange = (id) =>{
                             selectTab={() => handleTabChange("skills")} 
                             active={tab === "skills"}
                         >
-                            {" "}
-                            Skills{" "} 
+                            <span className="text-lg md:text-xl">Skills</span>
                         </TabButton>
                         <TabButton 
                             selectTab={() => handleTabChange("certifications")} 
                             active={tab === "certifications"}
                         >
-                            {" "}
-                            Certifications{" "} 
+                            <span className="text-lg md:text-xl">Certifications</span>
                         </TabButton>
                         <TabButton 
                             selectTab={() => handleTabChange("education")} 
                             active={tab === "education"}
                         >
-                            {" "}
-                            Education{" "} 
+                            <span className="text-lg md:text-xl">Education</span>
                         </TabButton>
                     </div>
-                    <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
+                    <div className="mt-8 text-base md:text-lg">{TAB_DATA.find((t) => t.id === tab).content}</div>
                 </div>
             </div>
         </section>

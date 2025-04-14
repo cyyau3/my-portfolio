@@ -29,9 +29,9 @@ const Navbar = () => {
                 <Link href="/" className="flex items-center">
                     <Image
                         src="/images/logo.png"
-                        alt="EY Logo"
-                        width={48}
-                        height={48}
+                        alt="Eunice Logo"
+                        width={100}
+                        height={90}
                         className="h-auto w-auto"
                         priority
                     />

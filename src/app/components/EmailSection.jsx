@@ -12,14 +12,22 @@ const EmailSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const form = formRef.current;
-        const res = await fetch("https://formspree.io/f/xqapnobb", {
-            method:"POST",
-            body: new FormData(form),
-        });
         
-        if (res.ok) {
-            setEmailSubmitted(true);
-            form.reset();
+        try{
+            const res = await fetch("https://formspree.io/f/xqapnobb", {
+                method:"POST",
+                body: new FormData(form),
+                headers:{
+                    Accept: "application/json",
+                }
+            });
+            
+            if (res.ok) {
+                setEmailSubmitted(true);
+                form.reset();
+            }
+        } catch (err) {
+            console.error("Error submitting form:", err);
         }
     }
     return (

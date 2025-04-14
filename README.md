@@ -16,7 +16,7 @@ This is my personal portfolio website, built using **Next.js**, designed to show
 Hosted on **Vercel** with CI/CD integration from GitHub.
 
 ## 🙏 Credit
-Special thanks to [Judy from WebDecoded](https://www.youtube.com/c/webdecoded) for her inspiring and educational content that helped guide the development of this site.
+Special thanks to Judy from WebDecoded for her inspiring and educational content that helped guide the development of this site.
 
 ---
 

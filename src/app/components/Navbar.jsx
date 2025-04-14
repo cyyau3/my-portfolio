@@ -1,9 +1,10 @@
 "use client";
 import Link from 'next/link';
+import Image from 'next/image';
 import React, {useState} from 'react';
-import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
+// import NavLink from './NavLink';
 
 const navLinks = [
     {
@@ -23,10 +24,17 @@ const navLinks = [
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-            <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-                <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold">
-                    LOGO
+        <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+            <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/images/logo.png"
+                        alt="EY Logo"
+                        width={48}
+                        height={48}
+                        className="h-auto w-auto"
+                        priority
+                    />
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {!navbarOpen ? (
@@ -45,7 +53,11 @@ const Navbar = () => {
                         {
                             navLinks.map((link, index) => (
                                 <li key={index}>
-                                    <NavLink href={link.path} title={link.title} />
+                                    {/*<NavLink href={link.path} title={link.title} />*/}
+                                    <a href={link.path} 
+                                        className="block py-2 pr-4 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+                                        {link.title}
+                                    </a>
                                 </li>
                             ))
                         }

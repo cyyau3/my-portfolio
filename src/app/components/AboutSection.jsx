@@ -52,11 +52,13 @@ const handleTabChange = (id) =>{
 };
 
     return (
-        <section className="text-white">
+        <section id="about" className="text-white scroll-mt-28">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">    
-                <Image src="/images/about-image.png" alt="a female developer sitting at her desk" width={500} height={500} />
+                <div className="flex justify-center items-center">
+                    <Image src="/images/about-image.png" alt="My tech stack" width={400} height={400} />
+                </div>
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+                    <h2  className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base md:text-lg">
                         I’m a driven and adaptable Python Developer with a strong interest in cloud computing. <br />
                         <br />I have experience with Python, SQL, JavaScript, React, and Cloud platforms like Azure. I actively pursue professional development to sharpen my skills and stay current in the tech landscape. <br />

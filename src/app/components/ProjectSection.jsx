@@ -8,7 +8,13 @@ const projectsData = [
     {
         id: 1, 
         title: "Sales Data Automator",
-        description: "A Python-based automation tool that extracts sales and inventory data from company partner website, standardizes reports into Excel, and improves productivity by over 70%.",
+        description: `
+            A Python-based tool that automates data extraction and report generation from company partner website using web scraping and Pandas.
+            Streamlines repetitive tasks, reduces manual effort, and outputs clean, shareable Excel summaries. 
+            Improve admin productivity by over 70%.
+            `,
+        tools: "Python, Pandas, Selenium, Git",
+        skills: "Web Scraping, Automation, Data Extraction, Excel Reporting, File Handling",
         image: "/images/projects/1.png",
         tag: ["All", "App"],
         gitUrl: "/",
@@ -17,7 +23,11 @@ const projectsData = [
     {
         id: 2,
         title: "Personal Portfolio",
-        description: "Developed a personal portfolio website using Next.js and Tailwind CSS to showcase projects and skills.",
+        description: `
+            A fully responsive portfolio built with Next.js and Tailwind CSS to showcase my skills, projects, and certifications as a Python developer. 
+            Designed with a dark UI theme, smooth animations, and a contact form.`,
+        tools: "Next.js, Tailwind CSS, React, Framer Motion, Formspree",
+        skills: "Responsive Design, UI/UX, Animation, Web Deployment",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
         gitUrl: "/",
@@ -44,7 +54,7 @@ const ProjectSection = () => {
     };
 
     return (
-        <section id="projects" className="scroll-mt-28">
+        <section id="projects" className="py-12 lg:py-16 scroll-mt-28">
             <h2 className="text-center text-4xl font-bold text-white mt-4">
                 My Projects
             </h2>
@@ -78,6 +88,8 @@ const ProjectSection = () => {
                             key={project.id} 
                             title={project.title} 
                             description={project.description} 
+                            tools={project.tools}
+                            skills={project.skills}
                             imgUrl={project.image}
                             tags={project.tag}
                             gitUrl={project.gitUrl}

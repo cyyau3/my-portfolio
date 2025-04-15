@@ -53,7 +53,7 @@ const handleTabChange = (id) =>{
 
     return (
         <section id="about" className="text-white scroll-mt-28">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">    
+            <div className="py-12 lg:py-16 md:grid md:grid-cols-2 gap-8 items-center xl:gap-16 xl:px-16">    
                 <div className="flex justify-center items-center">
                     <Image src="/images/about-image.png" alt="My tech stack" width={400} height={400} />
                 </div>

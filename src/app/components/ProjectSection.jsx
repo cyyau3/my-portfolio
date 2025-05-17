@@ -7,6 +7,21 @@ import { motion, useInView} from "framer-motion";
 const projectsData = [
     {
         id: 1, 
+        title: "Google Sheets to Notion Sync Integration",
+        description: `
+            A Python-based integration that syncs job application records from Google Sheets to a structured Notion database. 
+            Built with Flask and deployed on Render, the app is triggered via webhook and tracks edits using Google Apps Script. 
+            Syncing to Notion allows users to attach additional documents, images, and notes — all while continuing to update in a familiar spreadsheet format.
+            `,
+        tools: "Python, Flask, Google Apps Script, gspread, Notion API, Render, Git",
+        skills: "API Integration, Automation, Webhooks, Google Sheets API, Cloud Deployment",
+        image: "/images/projects/1.png",
+        tag: ["All", "App"],
+        gitUrl: "/",
+        previewUrl: "/",
+    },
+    {
+        id: 2, 
         title: "Sales Data Automator",
         description: `
             A Python-based tool that automates data extraction and report generation from company partner website using web scraping and Pandas.
@@ -17,11 +32,11 @@ const projectsData = [
         skills: "Web Scraping, Automation, Data Extraction, Excel Reporting, File Handling",
         image: "/images/projects/1.png",
         tag: ["All", "App"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/cyyau3/SalesDataAutomator",
         previewUrl: "/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Personal Portfolio",
         description: `
             A fully responsive portfolio built with Next.js and Tailwind CSS to showcase my skills, projects, and certifications as a Python developer. 
@@ -30,8 +45,8 @@ const projectsData = [
         skills: "Responsive Design, UI/UX, Animation, Web Deployment",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        gitUrl: "https://github.com/cyyau3/my-portfolio",
+        previewUrl: "https://ey-portfolio.vercel.app",
     },
 ];
 

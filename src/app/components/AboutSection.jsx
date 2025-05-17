@@ -10,9 +10,11 @@ const TAB_DATA = [
         content: (
             <ul className="list-disc pl-2">
                 <li>Python</li>
+                <li>Microsoft Azure</li>
+                <li>SQL (PostgresSQL, MySQL, Oracle, MongoDB)</li>
                 <li>JavaScript</li>
                 <li>HTML/CSS</li>
-                <li>SQL</li>
+                <li>Git</li>
             </ul>
         )
     },
@@ -21,10 +23,10 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className="list-disc pl-2">
-                <li>AI Skills 4 Women</li>
+                <li>Azure Fundamental (AZ-900)</li>
                 <li>Github Foundations</li>
-                <li>CS50: Introduction to Computer Science</li>
                 <li>3x Google Cloud Skill Badge</li>
+                <li>AI Skills 4 Women</li>
             </ul>
         )
     },

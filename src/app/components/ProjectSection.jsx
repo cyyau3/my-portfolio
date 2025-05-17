@@ -9,9 +9,9 @@ const projectsData = [
         id: 1, 
         title: "Google Sheets to Notion Sync Integration",
         description: `
-            A Python-based integration that syncs job application records from Google Sheets to a structured Notion database. 
-            Built with Flask and deployed on Render, the app is triggered via webhook and tracks edits using Google Apps Script. 
-            Syncing to Notion allows users to attach additional documents, images, and notes — all while continuing to update in a familiar spreadsheet format.
+            A Python-based tool that syncs job application data from Google Sheets to a Notion database.
+            Built with Flask and deployed on Render, it uses webhooks and Google Apps Script to track edits.
+            Syncing to Notion enables attachment of documents and notes while maintaining spreadsheet usability.
             `,
         tools: "Python, Flask, Google Apps Script, gspread, Notion API, Render, Git",
         skills: "API Integration, Automation, Webhooks, Google Sheets API, Cloud Deployment",
@@ -30,7 +30,7 @@ const projectsData = [
             `,
         tools: "Python, Pandas, Selenium, Git",
         skills: "Web Scraping, Automation, Data Extraction, Excel Reporting, File Handling",
-        image: "/images/projects/1.png",
+        image: "/images/projects/2.png",
         tag: ["All", "App"],
         gitUrl: "https://github.com/cyyau3/SalesDataAutomator",
         previewUrl: "/",
@@ -43,7 +43,7 @@ const projectsData = [
             Designed with a dark UI theme, smooth animations, and a contact form.`,
         tools: "Next.js, Tailwind CSS, React, Framer Motion, Formspree",
         skills: "Responsive Design, UI/UX, Animation, Web Deployment",
-        image: "/images/projects/2.png",
+        image: "/images/projects/3.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/cyyau3/my-portfolio",
         previewUrl: "https://ey-portfolio.vercel.app",

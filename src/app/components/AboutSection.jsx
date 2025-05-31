@@ -10,8 +10,8 @@ const TAB_DATA = [
         content: (
             <ul className="list-disc pl-2">
                 <li>Python</li>
-                <li>Microsoft Azure</li>
-                <li>SQL (PostgresSQL, MySQL, Oracle, MongoDB)</li>
+                <li>Cloud: AWS, Microsoft Azure</li>
+                <li>SQL: PostgresSQL, MySQL, Oracle, MongoDB</li>
                 <li>JavaScript</li>
                 <li>HTML/CSS</li>
                 <li>Git</li>
@@ -62,9 +62,10 @@ const handleTabChange = (id) =>{
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2  className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base md:text-lg">
-                        I’m a driven and adaptable Python Developer with a strong interest in cloud computing. <br />
-                        <br />I have experience with Python, SQL, JavaScript, React, and Cloud platforms like Azure. I actively pursue professional development to sharpen my skills and stay current in the tech landscape. <br />
-                        <br />I’m excited to contribute to innovative teams in Canada, collaborate with like-minded professionals, and help build impactful, real-world solutions.
+                        I’m a curious and solutions-driven developer with a passion for cloud computing. I enjoy building practical tools with Python and deploying them on different cloud platforms.<br />
+                        <br />With experience in Python, SQL, JavaScript, and Cloud Infrastructure, I learn best by doing — from automating job tracking to launching a Flask app with EC2, RDS, and CloudWatch. Turning ideas into real, working systems is what drives me. <br />
+                        <br />I’m excited to join a collaborative team where I can grow as a Cloud Engineer and contribute to impactful solutions.<br /> 
+                        <br />If you're hiring or open to connecting, feel free to reach out - I'd love a chat!
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton 

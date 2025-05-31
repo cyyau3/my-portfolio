@@ -7,6 +7,21 @@ import { motion, useInView} from "framer-motion";
 const projectsData = [
     {
         id: 1, 
+        title: "Expense Tracker App – AWS Cloud Deployment",
+        description: `
+            A full-stack Flask web application securely deployed on AWS using EC2, RDS, VPC, and CloudWatch. 
+            Built with production-ready components (Gunicorn, Nginx), it stores data in a private RDS PostgreSQL database and logs application activity via CloudWatch Agent.
+            Demonstrates secure network architecture, IAM-based access control, and real-world cloud deployment practices.
+            `,
+        tools: "Python, Flask, PostgreSQL, Gunicorn, Nginx, AWS EC2, RDS, VPC, CloudWatch, IAM",
+        skills: "Cloud Deployment, Infrastructure Design, Security Groups, IAM Roles, Cloud Monitoring, Flask App Hosting",
+        image: "/images/projects/1.png",
+        tag: ["All", "App", "Cloud"],
+        gitUrl: "https://github.com/cyyau3/flask-expense-tracker",
+        previewUrl: "https://youtu.be/bfRccKXN7mY",
+    },
+    {
+        id: 2, 
         title: "Google Sheets to Notion Sync Integration",
         description: `
             A Python-based tool that syncs job application data from Google Sheets to a Notion database.
@@ -15,13 +30,13 @@ const projectsData = [
             `,
         tools: "Python, Flask, Google Apps Script, gspread, Notion API, Render, Git",
         skills: "API Integration, Automation, Webhooks, Google Sheets API, Cloud Deployment",
-        image: "/images/projects/1.png",
+        image: "/images/projects/2.png",
         tag: ["All", "App"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
-        id: 2, 
+        id: 3, 
         title: "Sales Data Automator",
         description: `
             A Python-based tool that automates data extraction and report generation from company partner website using web scraping and Pandas.
@@ -30,20 +45,20 @@ const projectsData = [
             `,
         tools: "Python, Pandas, Selenium, Git",
         skills: "Web Scraping, Automation, Data Extraction, Excel Reporting, File Handling",
-        image: "/images/projects/2.png",
+        image: "/images/projects/3.png",
         tag: ["All", "App"],
         gitUrl: "https://github.com/cyyau3/SalesDataAutomator",
         previewUrl: "/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Personal Portfolio",
         description: `
             A fully responsive portfolio built with Next.js and Tailwind CSS to showcase my skills, projects, and certifications as a Python developer. 
             Designed with a dark UI theme, smooth animations, and a contact form.`,
         tools: "Next.js, Tailwind CSS, React, Framer Motion, Formspree",
         skills: "Responsive Design, UI/UX, Animation, Web Deployment",
-        image: "/images/projects/3.png",
+        image: "/images/projects/4.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/cyyau3/my-portfolio",
         previewUrl: "https://ey-portfolio.vercel.app",
@@ -83,6 +98,11 @@ const ProjectSection = () => {
                     onClick={handleTagChange} 
                     name="App"
                     isSelected={tag === "App"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange} 
+                    name="Cloud"
+                    isSelected={tag === "Cloud"}
                 />
                 <ProjectTag
                     onClick={handleTagChange} 

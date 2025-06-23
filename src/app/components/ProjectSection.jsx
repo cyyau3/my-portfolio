@@ -7,18 +7,20 @@ import { motion, useInView} from "framer-motion";
 const projectsData = [
     {
         id: 1, 
-        title: "Expense Tracker App – AWS Cloud Deployment",
+        title: "Expense Tracker App – AWS Cloud Deployment (Phase 1 & 2)",
         description: `
-            A full-stack Flask web application securely deployed on AWS using EC2, RDS, VPC, and CloudWatch. 
-            Built with production-ready components (Gunicorn, Nginx), it stores data in a private RDS PostgreSQL database and logs application activity via CloudWatch Agent.
-            Demonstrates secure network architecture, IAM-based access control, and real-world cloud deployment practices.
+            A full-stack Flask web application deployed on AWS using EC2, RDS, and VPC in Phase 1. 
+            In Phase 2, the infrastructure was rebuilt using modular Terraform, the app was containerized with Docker, and deployed using ECS Fargate with a custom domain via Route 53 + HTTPS (ACM). 
+            Logs and secrets were managed securely through CloudWatch and AWS Secrets Manager.\n\n
+            
+            This project demonstrates my ability to go beyond basic deployment by building scalable, secure, and production-ready cloud infrastructure with real-world tools.
             `,
-        tools: "Python, Flask, PostgreSQL, Gunicorn, Nginx, AWS EC2, RDS, VPC, CloudWatch, IAM",
-        skills: "Cloud Deployment, Infrastructure Design, Security Groups, IAM Roles, Cloud Monitoring, Flask App Hosting",
+        tools: "Python, Flask, PostgreSQL, Gunicorn, Nginx, Terraform, AWS EC2, RDS, VPC, ECS Fargate, ECR, ALB, ACM, Route 53, Secrets Manager, CloudWatch, IAM",
+        skills: "Cloud Deployment, Infrastructure as Code, Containerization, Networking, Security Groups, IAM Roles, Monitoring & Logging, Terraform Modules, Flask App Hosting",
         image: "/images/projects/1.png",
         tag: ["All", "App", "Cloud"],
-        gitUrl: "https://github.com/cyyau3/flask-expense-tracker",
-        previewUrl: "https://youtu.be/bfRccKXN7mY",
+        gitUrl: "https://github.com/cyyau3/flask-expense-tracker-infra",
+        previewUrl: "https://youtu.be/WJZAnc1_ZDY",
     },
     {
         id: 2, 
@@ -47,7 +49,7 @@ const projectsData = [
         skills: "Web Scraping, Automation, Data Extraction, Excel Reporting, File Handling",
         image: "/images/projects/3.png",
         tag: ["All", "App"],
-        gitUrl: "https://github.com/cyyau3/SalesDataAutomator",
+        gitUrl: "https://github.com/cyyau3/sales-data-automator",
         previewUrl: "/",
     },
     {

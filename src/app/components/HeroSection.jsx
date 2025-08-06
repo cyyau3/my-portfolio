@@ -39,7 +39,7 @@ const HeroSection = () => {
                         </span>
                     </h1>
                     <p className="text-[var(--text-secondary)] text-base sm:text-lg mb-6 lg:text-xl">
-                        When passion meets precision. Always exploring.
+                        I build reliable cloud-native solutions with Python.
                     </p>
                     <div>
                         <a

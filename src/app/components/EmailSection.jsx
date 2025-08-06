@@ -44,7 +44,7 @@ const EmailSection = () => {
             <h5 className="text-4xl font-bold text-[var(--text-primary)] my-2 font-heading">Let's Connect</h5>
             <p className="text-[var(--text-secondary)] mb-4 max-w-md font-body">
                 I'm currently open to new opportunities in Python development and cloud tech.
-                If you're hiring, working on something cool, or just want to say hi — my inbox is always open.
+                If you're hiring or want to say hi — my inbox is always open. <br />
                 <br />Looking forward to connecting!
             </p>
             <div className="socials flex flex-row gap-2">

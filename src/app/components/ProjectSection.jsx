@@ -87,9 +87,10 @@ const ProjectSection = () => {
 
     return (
         <section id="projects" className="py-12 lg:py-16 scroll-mt-28">
-            <h2 className="text-center text-4xl font-bold text-[var(--text-primary)] mt-4 font-heading">
-                My Projects
-            </h2>
+            <div className="text-center mb-6">
+                <h2 className="text-4xl font-heading font-bold mb-4 text-[var(--text-primary)]">My Projects</h2>
+                <p className="text-lg text-[var(--text-secondary)]">Explore my journey through creation. Each project marks a milestone in my ongoing pursuit of growth and learning.</p>
+            </div>
             <div className="text-[var(--text-primary)] flex flex-row justify-center items-center gap-3 py-6">
                 <ProjectTag
                     onClick={handleTagChange} 
